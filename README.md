@@ -4,12 +4,15 @@ Scrape data from tables in Wikipedia, in this example we will scrape tournament 
 1) SETTING UP THE ENVIRONMENT
 In VSCode open up a new terminal. In the top menu, find the Terminal menu and then select New Terminal. Install requirements.txt in a virtual environment:
 
-From Linux terminal:.\vev
+From Linux terminal:
+
     python3 -m venv venv 
     source venv/bin/activate 
 
 From Windows powershell
-    https://www.c-sharpcorner.com/article/steps-to-set-up-a-virtual-environment-for-python-development/
+
+https://www.c-sharpcorner.com/article/steps-to-set-up-a-virtual-environment-for-python-development/
+    
     # upgrade pip to its latest version  
     python -m pip install --upgrade pip  
 
@@ -33,9 +36,12 @@ From Windows powershell
     deactivate
 
 2) CREATE WEB SCRAPING PROJECT (in venv)
+
     scrapy startproject wikitables
+    
     scrapy genspider rugbywc en.wikipedia.org
 
 3) RUN SPIDER (in venv)
+
     from .\wikitables> scrapy crawl rugbywc
 
